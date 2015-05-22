@@ -145,14 +145,18 @@ exports.convert = function(options) {
 			if (options.background) {
 				args.push('-background')
 				args.push(options.background)
-			}	
+			}
 		}
 		else {
 			if (options.background) {
 				args.push('-background')
 				args.push(options.background)
 				args.push('-flatten')
-			}	
+			}
+		}
+		if (options.transparent) {
+			args.push('-transparent')
+			args.push(options.transparent)
 		}
 
 		args.push(options.dst)
@@ -187,14 +191,18 @@ exports.rotate = function(options) {
 			if (options.background) {
 				args.push('-background')
 				args.push(options.background)
-			}	
+			}
 		}
 		else {
 			if (options.background) {
 				args.push('-background')
 				args.push(options.background)
 				args.push('-flatten')
-			}	
+			}
+		}
+		if (options.transparent) {
+			args.push('-transparent')
+			args.push(options.transparent)
 		}
 
 		args.push('-rotate')
@@ -236,14 +244,18 @@ exports.resize = function(options) {
 			if (options.background) {
 				args.push('-background')
 				args.push(options.background)
-			}	
+			}
 		}
 		else {
 			if (options.background) {
 				args.push('-background')
 				args.push(options.background)
 				args.push('-flatten')
-			}	
+			}
+		}
+		if (options.transparent) {
+			args.push('-transparent')
+			args.push(options.transparent)
 		}
 
     args.push('-auto-orient')
@@ -291,14 +303,18 @@ exports.crop = function(options) {
 			if (options.background) {
 				args.push('-background')
 				args.push(options.background)
-			}	
+			}
 		}
 		else {
 			if (options.background) {
 				args.push('-background')
 				args.push(options.background)
 				args.push('-flatten')
-			}	
+			}
+		}
+		if (options.transparent) {
+			args.push('-transparent')
+			args.push(options.transparent)
 		}
 
     args.push('-auto-orient')
@@ -353,14 +369,18 @@ exports.rescrop = function(options) {
 			if (options.background) {
 				args.push('-background')
 				args.push(options.background)
-			}	
+			}
 		}
 		else {
 			if (options.background) {
 				args.push('-background')
 				args.push(options.background)
 				args.push('-flatten')
-			}	
+			}
+		}
+		if (options.transparent) {
+			args.push('-transparent')
+			args.push(options.transparent)
 		}
 
     args.push('-auto-orient')
@@ -425,14 +445,18 @@ exports.thumbnail = function(options) {
 				if (options.background) {
 					args.push('-background')
 					args.push(options.background)
-				}	
+				}
 			}
 			else {
 				if (options.background) {
 					args.push('-background')
 					args.push(options.background)
 					args.push('-flatten')
-				}	
+				}
+			}
+			if (options.transparent) {
+				args.push('-transparent')
+				args.push(options.transparent)
 			}
 
 	    args.push('-auto-orient')
